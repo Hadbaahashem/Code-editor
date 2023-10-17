@@ -1,0 +1,52 @@
+.App{
+  height: 100px;
+}
+:root {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.split {
+  resize: both;
+  display: flex;
+  height: calc(100vh - 115px);
+  overflow: hidden;
+}
+
+.gutter {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#split-dark .gutter {
+  background-color: #2d3748;
+}
+
+.gutter.gutter-horizontal,
+.gutter.gutter-vertical {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+  cursor: col-resize;
+}
+.run {
+  background-color: #52895e;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100px;
+  height: 47px;
+  border-radius: 10px;
+  padding:4px ;
+  }
